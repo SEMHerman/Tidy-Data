@@ -1,10 +1,13 @@
 ## You should create one R script called run_analysis.R that does the following. 
+
 ## 1.Merges the training and the test sets to create one data set.
 
 ## load necessary packages
+if (is.element('dplyr', installed.packages()[,1]) == FALSE) { 
+  +     install.packages('dplyr') } 
 library(dplyr)
 
-## set working directory to be train file
+## set working directory to be UCI HAR Dataset file
 setwd("./UCI HAR Dataset")
 
 ## import accessory files into a data.frame
@@ -46,10 +49,15 @@ Merge_Ext<-Merge %>% dplyr:: select(grep("subject|activity|mean|std", names(Merg
 ## 4.Appropriately labels the data set with descriptive variable names. 
 names(Merge_Ext)<-gsub("-","",names(Merge_Ext))
 names(Merge_Ext)<-sub("\\(\\)","",names(Merge_Ext))
+names(Merge_Ext)<-sub("mean","Mean", names(Merge_Ext))
+names(Merge_Ext)<-sub("std","Std", names(Merge_Ext))
+names(Merge_Ext)<-sub("BodyBody","Body", names(Merge_Ext))
 
 ## 5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 Tidy<-Merge_Ext %>% group_by (subject,activity) %>% summarise_all(funs(mean))
 
 ## creates an output file in txt formate
 write.table(Tidy,file="Tidy_data.txt",row.name=FALSE)
+
+
 
