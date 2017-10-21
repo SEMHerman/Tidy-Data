@@ -55,6 +55,7 @@ names(Merge_Ext)<-sub("BodyBody","Body", names(Merge_Ext))
 
 ## 5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 Tidy<-Merge_Ext %>% group_by (subject,activity) %>% summarise_all(funs(mean))
+Tidy
 
 ## creates an output file in txt formate
 write.table(Tidy,file="Tidy_data.txt",row.name=FALSE)
