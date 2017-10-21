@@ -46,3 +46,84 @@ Example modifications:
 Tidy data set: Tidy
 
 The tidy data set contains the average of each measurment (standard deviation and mean values of the raw dataset) for each activity and each subject resulting in 40 observations. 
+
+List of Activities:
+
+(1) WALKING
+(2) WALKING_UPSTAIRS
+(3) WALKING_DOWNSTAIRS
+(4) SITTING
+(5) STANDING
+(6) LAYING
+
+Variables:
+
+subject - id of subject (1-30)
+activity - measured activity
+Measurements: average value of all observations of the measurment for given subject and activity
+timeBodyAccMeanX 
+timeBodyAccMeanY 
+timeBodyAccMeanZ 
+timeBodyAccStdX 
+timeBodyAccStdY 
+timeBodyAccStdZ 
+timeGravityAccMeanX 
+timeGravityAccMeanY 
+timeGravityAccMeanZ 
+timeGravityAccStdX 
+timeGravityAccStdY 
+timeGravityAccStdZ
+timeBodyAccJerkMeanX 
+timeBodyAccJerkMeanY 
+timeBodyAccJerkMeanZ 
+timeBodyAccJerkStdX 
+timeBodyAccJerkStdY 
+timeBodyAccJerkStdZ 
+timeBodyGyroMeanX 
+timeBodyGyroMeanY 
+timeBodyGyroMeanZ 
+timeBodyGyroStdX 
+timeBodyGyroStdY 
+timeBodyGyroStdZ 
+timeBodyGyroJerkMeanX
+timeBodyGyroJerkMeanY 
+timeBodyGyroJerkMeanZ
+timeBodyGyroJerkStdX 
+timeBodyGyroJerkStdY 
+timeBodyGyroJerkStdZ 
+timeBodyAccMagMean 
+timeBodyAccMagStd 
+timeGravityAccMagMean 
+timeGravityAccMagStd 
+timeBodyAccJerkMagMean 
+timeBodyAccJerkMagStd 
+timeBodyGyroMagMean
+timeBodyGyroMagStd 
+timeBodyGyroJerkMagMean 
+timeBodyGyroJerkMagStd 
+freqBodyAccMeanX 
+freqBodyAccMeanY 
+freqBodyAccMeanZ 
+freqBodyAccStdX
+freqBodyAccStdY 
+freqBodyAccStdZ 
+freqBodyAccJerkMeanX 
+freqBodyAccJerkMeanY 
+freqBodyAccJerkMeanZ
+freqBodyAccJerkStdX
+freqBodyAccJerkStdY 
+freqBodyAccJerkStdZ
+freqBodyGyroMeanX 
+freqBodyGyroMeanY
+freqBodyGyroMeanZ 
+freqBodyGyroStdX 
+freqBodyGyroStdY
+freqBodyGyroStdZ
+freqBodyAccMagMean
+freqBodyAccMagStd 
+freqBodyAccJerkMagMean 
+freqBodyAccJerkMagStd 
+freqBodyGyroMagMean 
+freqBodyGyroMagStd
+freqBodyGyroJerkMagMean
+freqBodyGyroJerkMagStd 
